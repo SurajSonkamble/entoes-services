@@ -1,0 +1,27 @@
+package com.becoder.entities;
+
+import java.util.Date;
+
+import jakarta.persistence.MappedSuperclass;
+import lombok.Getter;
+import lombok.Setter;
+
+
+@Getter
+@Setter
+@MappedSuperclass
+public class BaseModel {
+	
+
+	private Integer createdBy;
+	
+	
+	private Date CreatedOn;
+	
+	
+	private Integer updatedBy;
+	
+	
+	private Date updatedOn;
+
+}
